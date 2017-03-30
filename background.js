@@ -1,9 +1,6 @@
 chrome.tts.speak('奥松小车插件开始启动');
 
 //html ->background.js //单次被动连接.
-
-
-
 chrome.runtime.onMessageExternal.addListener(
                                              function(request, sender, sendResponse) {
                                              console.log("sender" + sender.url + "openUrlInEditor" + request.openUrlInEditor);
